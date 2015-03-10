@@ -1,6 +1,8 @@
 Mimosa LiveScript skeleton
 ============================
 
+__WARNING I've stopped to maintain this modules, so I'm happy to move the ownership of this repository if somebody is interested in maintaining it, refer to [this issue](https://github.com/ifraixedes/mimosa-module-livescript-skeleton/issues/1)__
+
 This repository contains a module template to create mimosa modules in [LiveScript](http://livescript.net/).
 
 ## Skeleton information
@@ -16,6 +18,6 @@ Mimosa is a __Lighting-fast Build Tool for Modem Web Development__; you can find
 
 LiveScript is a language which compiles to JavaScript. It has a straightforward mapping to JavaScript and allows you to write expressive code devoid of repetitive boilerplate; you can find out more about it in its official web site [livescript.net](http://livescript.net/)
 
-## LICENSE
+## License
 
-Just MIT, in details in LICENSE file.
+The MIT License, for more information read the [LICENSE file](LICENSE)
