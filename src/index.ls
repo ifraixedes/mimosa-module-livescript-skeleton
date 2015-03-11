@@ -98,12 +98,15 @@ _minifyJS = (mimosaConfig, options, next) ->
 # if a build is needed before module code is executed.  The second is a callback that should contain the
 # module's functionality.  That callback is passed the mimosa-config.
 
-registerCommand = (program, retrieveConfig) ->
+registerCommand = (program, logger, retrieveConfig) ->
   program
     .command('foo')
     .description('Do something fooey')
-    .action ->
-      retrieveConfig false, config ->
+    .action (opts) ->
+      retrieveConfigOpts =
+        buildFirst: false
+        mdebug: !!opts.mdebug
+      retrieveConfig retrieveConfigOpts, config ->
 
 # The module.exports exposes module code to Mimosa.  The properties that
 # are exported are Mimosa's hook to your module.  Mimosa will attempt
